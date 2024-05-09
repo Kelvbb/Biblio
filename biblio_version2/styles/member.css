@@ -1,0 +1,277 @@
+/* =========== Google Fonts ============ */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+h1{
+  color: aliceblue;
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 20px;
+  padding-top: 40px;
+}
+.space{
+text-align: center;
+padding-bottom: 40px;
+}
+
+.sizeimg{
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+hr{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table{
+  border-collapse: collapse;
+  margin-right: auto;
+  margin-left: auto;
+}
+td, th{
+  overflow: auto;
+  max-width: 150px;
+  min-width: 150px;
+  color: aliceblue;
+}
+
+body{
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+.space {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.space hr {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--text-color)
+}
+
+.container-slider-wrapper {
+  max-width: 60%;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+  
+.slider-wrapper .image-list {
+  display: grid;
+  gap: 18px;
+  font-size: 0;
+  margin-bottom: 30px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.slider-wrapper .image-list::-webkit-scrollbar {
+  display: none;
+}
+
+.slider-wrapper .image-list .image-item {
+  width: 240px;
+  height: 340px;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  background: var(--panel);
+  border-radius: 7px;
+}
+
+.slider-wrapper .image-list .image-item img {  
+  width: 200px;
+  height: 300px;
+  margin: auto;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.slider-wrapper .image-list .image-item img:hover {  
+  width: 215px;
+  height: 315px;
+}
+
+.slider-wrapper .slide-button {
+  position: absolute;
+  top: 36%;
+  height: 50px;
+  width: 50px;
+  color: #fff;
+  border: none;
+  outline: none;
+  background: var(--panel);
+  font-size: 2.2rem; 
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.6s;
+  transform: translateY(1750%);
+}
+
+.slider-wrapper .slide-button:hover {
+  background: var(--panel-hover);
+}
+
+.slider-wrapper .slide-button#prev-slide {
+  left: 10%;
+  display: none;
+}
+
+.slider-wrapper .slide-button#next-slide {
+  right: 10%;
+}
+
+.container .slider-scrollbar {
+  height: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-witdh: 1023px) {
+  .slider-wrapper .slide-button {
+    display: none!important;
+  }
+
+  .slider-wrapper .image-list{
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .slider-wrapper .image-list .image-item {
+    width: 280px;
+    height: 380px;
+  }
+}
+
+  /* Formulaire compte */
+
+.content{
+  background: rgba;
+  width: 50%;
+  height: 120%;
+  margin-left: auto;
+  margin-right: auto;
+  background: #313E50;
+  border-radius: 10px;
+  padding: 28px;
+
+}
+.main-user-info{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.user-input-box:nth-child(2n){
+  justify-content: end;
+}
+
+.user-input-box{
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+  padding-bottom: 15px;
+  color: aliceblue;
+}
+
+.user-input-box label{
+  width: 95%;
+  color: fff;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 5px 0;
+}
+
+.user-input-box input{
+  height: 40px;
+  width: 95%;
+  border-radius: 7px;
+  outline: none;
+  padding: 0 10px;
+}
+
+.gender-title{
+  color: aliceblue;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.gender-category{
+  margin: 15px 0;
+  color: aliceblue;
+}
+
+.gender-category label{
+  padding: 0 10px 5px;
+}
+
+.gender-category label,
+.gender-category input,
+.form-submit-btn input,
+.form-logout-btn{
+  cursor: pointer;
+}
+
+.form-submit-btn{
+  margin-top: 40px;
+}
+
+
+.form-submit-btn input{
+  width: 200px;
+  margin-top: 10px;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  color: aliceblue;
+  background: #5C6672;
+}
+
+/* Paramètres */
+
+.content-setting{
+  background: rgba;
+  width: 30%;
+  height: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background: #313E50;
+  border-radius: 10px;
+  padding: 28px;
+}
+
+.form-logout-btn input{
+  width: 200px;
+  margin-top: 10px;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  color: aliceblue;
+  background: #313E50;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+}
+
+.disconnect-setting{
+    background: rgba;
+    width: 30%;
+    height: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #313E50;
+    border-radius: 10px;
+    padding: 28px;
+}

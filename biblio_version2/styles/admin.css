@@ -1,0 +1,266 @@
+/* =========== Police Ubuntu ============ */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+* {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+ --background: #5C6672;  /* Background */
+ --panel: #313E50; /* Header & Footer*/
+ --text-color: #8fa096; /* Boutons */
+ --text-hover: #8fa096; 
+ --text-color: #E4E4E4;  /* Couleurs pr le texte */
+ --btext-color: #242424;
+ --subtext-color: #e3e3e3;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color : var(--background);
+}
+                /* =============== Page d'ajout de livres ================ */
+/* =============== Contenu de la page ================ */
+
+.book-card {
+  display: flex;
+  width: 70%;
+  margin: 5% auto; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.219);
+  border-radius: 13px; 
+  overflow: hidden; 
+}
+
+.left-panel, .right-panel {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px; 
+}
+
+/* =============== Pr le coté gauche ================ */
+
+.left-panel {
+  background-color: var(--panel); 
+  align-items: center;
+  text-align: center;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: none; /* Ca empêche de pouvoir agrandir la taille de l'input */
+}
+
+/* =============== Pr le coté droit ================ */
+
+.right-panel {
+  background-color: var(--text-color); 
+  align-items: center;
+  text-align: center;
+}
+
+.right-panel .add-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.right-panel .add-image ion-icon {
+  font-size: 48px; 
+  color: var(--Bleu_foncé); 
+}
+
+/* =============== Pr le bouton "envoyer" ================ */
+
+.send-button {
+  display: inline-block;
+  text-align: center; 
+  vertical-align: middle;
+  background-color: var(--text-color);
+  border-radius: 25px;
+  height: 10%;
+  width: 20%;
+  text-decoration: none; 
+  color: var(--Bleu_foncé); 
+}
+
+              /* =============== Page de réini de mdp ================ */
+
+.account_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.request_card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  width: calc(33.333% - 20px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background-color: var(--panel);
+}
+
+.request_card h2, .request_card p {
+  margin: 10px 0;
+  color: var(--text-color);
+}
+
+.h1_mdp {
+  text-align: center;
+  color: var(--text-color);
+}
+
+.bouton_autoriser, .bouton_refuser {
+  align-items: center;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 13px; 
+  cursor: pointer;
+  font-size: 15px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  
+}
+
+
+
+.bouton_autoriser {
+  background-color: #4CAF50; 
+}
+
+.bouton_autoriser:hover, .bouton_autoriser:focus {
+  background-color: #45a049; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.bouton_refuser {
+  background-color: #f44336; 
+}
+
+.bouton_refuser:hover, .bouton_refuser:focus {
+  background-color: #dc2836; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.bouton_autoriser, .bouton_refuser {
+  margin: 10px;
+  text-decoration: none;
+}
+
+/* =============== Page de réini de mdp ================ */
+
+.h1_json {
+  text-align: center;
+  color: var(--text-color);
+}
+
+.json_container {
+  background-color: var(--panel);
+  margin: 20vh auto; 
+  border: 2px solid #ccc;
+  border-radius: 13px; 
+  text-align: center; 
+  width: 30%;
+}
+
+.json_container a {
+  color: inherit; 
+}
+
+.json_container p {
+  color: inherit; 
+  margin: 10px;
+  color: var(--subtext-color);
+}
+
+.json_container ion-icon {
+  font-size: 70px;
+  color: var(--subtext-color);
+  margin: 10px;
+}
+
+.json_container ion-icon:hover {
+  color: var(--text-hover);
+}
+
+
+/* =============== Page de submit ================ */
+
+
+.h2_submit {
+  color: var(--subtext-color);
+  margin: 20px; 
+  text-align: center; 
+}
+
+.form_submit {
+  position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+}
+
+.p_form {
+  color: var(--subtext-color)   ;
+}
+
+footer {
+  margin-top: 20.8%;
+}
+
+.confirm_container p{
+  display: flex;
+  color: var(--subtext-color);
+  justify-content: center;
+}
+
+.hr_confirm {
+  display: flex;
+  color: var(--subtext-color);
+  justify-content: center;
+}
+
+/* =============== Déconnexion ================ */
+
+.form-logout-btn{
+  cursor: pointer;
+}
+
+.form-logout-btn input{
+  width: 200px;
+  margin-top: 10px;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  color: aliceblue;
+  background: #313E50;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+}

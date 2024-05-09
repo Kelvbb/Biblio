@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+:root {
+  --background: #5C6672;  /* Background */
+  --panel: #313E50; /* Header & Footer*/
+  --text-color: hsl(145, 8%, 59%); /* Boutons */
+  --text-hover: #8fa096; 
+  --text-color: #E4E4E4;  /* Couleurs pr le texte */
+  --btext-color: #242424;
+  --subtext-color: #e3e3e3;
+}
+
+h2 {
+  font-size: 32px;
+  font-family: "Ubuntu";
+
+  color: var(--subtext-color);
+}
+
+h3 {
+  font-size: 24px;
+  font-family: "Ubuntu";
+
+  color: var(--text-color);
+}
+
+.space {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.space hr {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--text-color)
+}
+
+.container-slider-wrapper {
+  max-width: 70%;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+  
+.slider-wrapper .image-list {
+  display: grid;
+  gap: 18px;
+  font-size: 0;
+  margin-bottom: 30px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.slider-wrapper .image-list::-webkit-scrollbar {
+  display: none;
+}
+
+.slider-wrapper .image-list .image-item a {  
+  margin: auto;
+  }
+  
+.slider-wrapper .image-list .image-item {
+  width: 240px;
+  height: 340px;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  background: var(--panel);
+  border-radius: 7px;
+}
+
+.slider-wrapper .image-list .image-item img {  
+  width: 200px;
+  height: 300px;
+  margin: auto;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.slider-wrapper .image-list .image-item img:hover {  
+  width: 215px;
+  height: 315px;
+}
+
+.slider-wrapper .slide-button {
+  position: absolute;
+  top: 36%;
+  height: 50px;
+  width: 50px;
+  color: #fff;
+  border: none;
+  outline: none;
+  background: var(--panel);
+  font-size: 2.2rem; 
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.6s;
+}
+
+.slider-wrapper .slide-button:hover {
+  background: var(--text-hover);
+}
+
+.slider-wrapper .slide-button#prev-slide {
+  left: 10%;
+  display: none;
+}
+
+.slider-wrapper .slide-button#next-slide {
+  right: 10%;
+}
+
+.container .slider-scrollbar {
+  height: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-witdh: 1023px) {
+  .slider-wrapper .slide-button {
+    display: none!important;
+  }
+
+  .slider-wrapper .image-list{
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .slider-wrapper .image-list .image-item {
+    width: 280px;
+    height: 380px;
+  }
+}
+
+.container-member {
+  max-width: 80%;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.member {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10%;
+}
+
+.member .text-member {
+  width: 45%;
+  text-align: left;
+}
+
+.member .text-member h2 {
+  margin-top: 1em;
+}
+
+.member .text-member p {
+  margin-top: 1em;
+  margin-bottom: 2em;
+  font-size: 20px;
+  font-family: "Ubuntu";
+
+  color: var(--text-color);
+}
+
+.member .sign-member {
+  min-width: 45%;
+  border-radius: 7px;
+  text-align: center;
+  background: var(--panel);
+}
+
+.member .sign-member h2 {
+  margin-top: 1em;
+}
+
+.member .sign-member h3 {
+  margin-top: 0.6em;
+}
+/*
+
+                                    PAGE BOOKS.PHP
+
+*/
+#section_genre h2{
+  text-align: center;
+  padding: 20px;
+}
+.genre h3{
+  text-align: center;
+}
+#div_search{
+  display: flex;
+  justify-content: center;
+}
+#search{
+  width: 250px;
+  height: 30px;
+  border-radius: 20px;
+}
+#button_search{
+  border-radius: 10px;
+}
+
+/* DIV FIRST */
+#div-button a button{
+  margin: 30px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  color: var(--text-color);
+  background-color: #5C6672;
+}
+
+/* 
+
+                                        Page CONNEXION.PHP
+
+*/
+.connexion_f{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  background: var(--panel);
+  padding: 20px;
+  border-radius: 8px;
+}
+.connexion_f h2 {
+  margin-bottom: 20px;
+}
+.connexion_f input[type="text"],
+.connexion_f input[type="password"],
+.connexion_f button {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.connexion_f label{
+  color: var(--text-color);
+}
+.connexion_f button {
+  background-color: #5C6672;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.connexion_f button:hover {
+  background-color: #5C6672;
+}
+
+.connexion_f a {
+  text-decoration: none;
+  color: var(--text-color);
+  margin-bottom: 15px;
+  display: block;
+}
+
+.connexion_f a:hover {
+  text-decoration: underline;
+}
+
+/* 
+
+                                      Page INSCRIPTION.PHP
+
+*/
+.inscription_f{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 130px;
+  background: var(--panel);
+  padding: 20px;
+  border-radius: 8px;
+}
+.inscription_f h2 {
+  margin-bottom: 20px;
+}
+.inscription_f input[type="text"],
+.inscription_f input[type="password"],
+.inscription_f button {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.inscription_f label{
+  color: var(--text-color);
+}
+.inscription_f button {
+  background-color: #5C6672;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.inscription_f button:hover {
+  background-color: #5C6672;
+}
+
+.inscription_f a {
+  text-decoration: none;
+  color: var(--text-color);
+  margin-bottom: 15px;
+  display: block;
+}
+
+.inscription_f a:hover {
+  text-decoration: underline;
+}
+#find{
+  display: none;
+  max-width: 300px;
+  color: var(--text-color);
+}
+#buttonFind{ 
+  text-align: center;
+}
+#subbtn{
+  width: 100%;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 10px;
+}
+#btnback_insc{
+  width: 20%;
+}
+.connected{
+  font-size: 58px;
+  text-align: center;
+  color: var(--text-color);
+  font-family: "Ubuntu";
+}
